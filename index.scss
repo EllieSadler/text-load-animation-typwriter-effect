@@ -1,0 +1,87 @@
+/* start generic styles */
+body {
+    background: #faff28;
+    margin: 0;
+}
+
+.container {
+    max-width: 800px;
+    padding: 0 40px;
+    margin: 0 auto;
+    font-family: 'Arial Black';
+}
+
+h1 {
+    max-width: 580px;
+    font-size: 5em;
+    line-height: 1em;
+    color: #ff96da;
+    text-shadow: .1em .05em #ec3aae;
+    margin-bottom: .2em;
+}
+
+h2 {
+    font-size: 2em;
+    color: #6d0175;
+}
+/* end generic styles */
+
+/* start of h1 animated styles */
+.word {
+    position: relative;
+    opacity: 0;
+    animation: appear .3s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+
+.word:nth-child(2) {
+    animation-delay: 1.15s;
+}
+
+.word:nth-child(3) {
+    animation-delay: 1.3s;
+}
+
+@keyframes appear {
+    0% {
+    opacity: 0;
+    top: 20px;
+    }
+    
+    100% {
+    opacity: 1;
+    top: 0;
+    }
+}
+
+/* end of h1 animated styles */
+
+/* start of h2 animated styles */
+h2 {
+    position: relative;
+}
+
+.subheadline-spacer {
+    user-select: none;
+    color: transparent;
+}
+
+.animated {
+    position: absolute; 
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+span.cursor {
+    margin-left: 5px;
+    border-right: 20px solid #ff77c7;
+    animation: blink .7s steps(1) infinite;
+}
+
+@keyframes blink {
+    50% { border-color: transparent; }
+}
+
+/* start of h2 animated styles */

@@ -1,0 +1,9 @@
+<div class="container" id="app">
+    <h1>
+        <span v-for="word in headlineArr" v-html="word + ' '" class="word"></span>
+    </h1>
+    <h2>
+        <div class="subheadline-spacer" v-html="subheadline"></div>
+        <div class="animated" v-html="renderedSubheadline" aria-hidden="true"></div>
+    </h2>
+</div>
